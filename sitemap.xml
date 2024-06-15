@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://chaseblock.com//news/asplos2024/</loc>
+<loc>https://chaseblock.com//news/2024.asplos/</loc>
 <lastmod>2024-04-04T14:59:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://chaseblock.com//news/matter2024/</loc>
+<loc>https://chaseblock.com//news/2024.matter/</loc>
 <lastmod>2024-05-01T08:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://chaseblock.com//news/2024.sc/</loc>
+<lastmod>2024-06-14T08:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://chaseblock.com//</loc>
