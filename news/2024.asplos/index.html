@@ -147,13 +147,6 @@
             
           
           
-            <!-- Search -->
-            <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
-              </button>
-            </li>
-          
           
             <!-- Toogle theme mode -->
             <li class="toggle-container">
@@ -433,123 +426,6 @@
 
 
     
-  <script type="module" src="/assets/js/search/ninja-keys.min.js?601a2d3465e2a52bec38b600518d5f70"></script>
-  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
-  <script>
-    let searchTheme = determineComputedTheme();
-    const ninjaKeys = document.querySelector('ninja-keys');
-
-    if (searchTheme === 'dark') {
-      ninjaKeys.classList.add('dark');
-    } else {
-      ninjaKeys.classList.remove('dark');
-    }
-
-    const openSearchModal = () => {
-      // collapse navbarNav if expanded on mobile
-      const $navbarNav = $('#navbarNav');
-      if ($navbarNav.hasClass('show')) {
-        $navbarNav.collapse('hide');
-      }
-      ninjaKeys.open();
-    };
-  </script>
-  <script>
-    // get the ninja-keys element
-    const ninja = document.querySelector('ninja-keys');
-
-    // add the home and posts menu items
-    ninja.data = [{
-        id: "nav-about",
-        title: "about",
-        section: "Navigation",
-        handler: () => {
-          window.location.href = "/";
-        },
-      },{id: "nav-publications",
-              title: "publications",
-              description: "",
-              section: "Navigation",
-              handler: () => {
-                window.location.href = "/publications/";
-              },
-            },{id: "news-i-m-excited-to-be-presenting-our-work-on-communication-in-distributed-sparse-matrix-multiplication-called-two-face-at-asplos-in-san-diego-this-month-see-you-there",
-              title: 'I’m excited to be presenting our work on communication in distributed sparse matrix...',
-              description: "",
-              section: "News",},{id: "news-the-lu-group-at-ut-austin-just-published-a-work-on-stretchable-pressure-sensors-in-matter-you-can-find-it-here-https-authors-elsevier-com-c-1j0dk9cyxd6qri",
-              title: 'The Lu Group at UT Austin just published a work on stretchable pressure...',
-              description: "",
-              section: "News",},{id: "news-our-work-titled-distributed-memory-parallel-algorithms-for-sparse-matrix-and-sparse-tall-and-skinny-matrix-multiplication-led-by-isuru-ranawaka-has-been-accepted-to-sc-39-24",
-              title: 'Our work titled *Distributed-Memory Parallel Algorithms for Sparse Matrix and Sparse Tall-and-Skinny Matrix...',
-              description: "",
-              section: "News",},{id: "news-our-work-titled-taming-the-acceleration-tax-enabling-new-opportunities-for-fine-grained-disaggregated-accelerator-level-parallelism-was-just-accepted-to-pact-39-24",
-              title: 'Our work, titled *Taming the Acceleration Tax: Enabling New Opportunities for Fine-Grained, Disaggregated...',
-              description: "",
-              section: "News",},{
-            id: 'socials-email',
-            title: 'Send email',
-            section: 'Socials',
-            handler: () => {
-              window.open("mailto:%63%68%61%73%65@%63%68%61%73%65%62%6C%6F%63%6B.%63%6F%6D", "_blank");
-            },
-          },{
-            id: 'socials-orcid',
-            title: 'ORCID',
-            section: 'Socials',
-            handler: () => {
-              window.open("https://orcid.org/0009-0003-7770-003X", "_blank");
-            },
-          },{
-            id: 'socials-google-scholar',
-            title: 'Google Scholar',
-            section: 'Socials',
-            handler: () => {
-              window.open("https://scholar.google.com/citations?user=xczCa7oAAAAJ", "_blank");
-            },
-          },{
-            id: 'socials-github',
-            title: 'GitHub',
-            section: 'Socials',
-            handler: () => {
-              window.open("https://github.com/chaseblock", "_blank");
-            },
-          },{
-            id: 'socials-linkedin',
-            title: 'LinkedIn',
-            section: 'Socials',
-            handler: () => {
-              window.open("https://www.linkedin.com/in/chaseblock", "_blank");
-            },
-          },{
-          id: 'light-theme',
-          title: 'Change theme to light',
-          description: 'Change the theme of the site to Light',
-          section: 'Theme',
-          handler: () => {
-            setThemeSetting("light");
-          },
-        },
-        {
-          id: 'dark-theme',
-          title: 'Change theme to dark',
-          description: 'Change the theme of the site to Dark',
-          section: 'Theme',
-          handler: () => {
-            setThemeSetting("dark");
-          },
-        },
-        {
-          id: 'system-theme',
-          title: 'Use system default theme',
-          description: 'Change the theme of the site to System Default',
-          section: 'Theme',
-          handler: () => {
-            setThemeSetting("system");
-          },
-        },];
-  </script>
-  <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script>
-
 
   </body>
 </html>
