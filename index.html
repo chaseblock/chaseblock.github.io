@@ -59,7 +59,7 @@
   <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%8A&lt;/text&gt;&lt;/svg&gt;">
 
 <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
-<link rel="canonical" href="https://chaseblock.com//">
+<link rel="canonical" href="http://localhost:4000/">
 
 <!-- Dark Mode -->
 <script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
@@ -216,12 +216,13 @@
     <div class="clearfix">
 <p>I am a PhD candidate working with the <a href="https://iacoma.cs.uiuc.edu/" rel="external nofollow noopener" target="_blank">i-acoma group</a> in the Computer Science department at the University of Illinois Urbana-Champaign. My interests are mainly in computer architecture and hardware/software systems development, although I have worked on a variety of other projects in the past. Previously, I studied Electrical &amp; Computer Engineering at the University of Texas at Austin.</p>
 
-<p>In the past, I have worked on a range of topics and with several groups, including 
+<p>In the past, I have worked on a range of topics with several fantastic groups. These include 
 firmware development for Amazon’s <a href="https://www.aboutamazon.com/news/transportation/meet-scout" rel="external nofollow noopener" target="_blank">Scout</a>, 
-databases at Microsoft Azure, 
-CPU verification with Intel’s Advanced Architecture Development Group, 
-automotive electronics with the University of Texas Solar Vehicles Team (a part of <a href="https://www.longhornracing.org/solar-vehicle-team" rel="external nofollow noopener" target="_blank">Longhorn Racing</a>), 
-and bioelectronics with UT Austin’s <a href="https://sites.utexas.edu/nanshulu/" rel="external nofollow noopener" target="_blank">Lu Group</a>.</p>
+PostgreSQL at Microsoft Azure,
+CPU verification at Intel,
+and CPU microarchitecture at Apple.
+When I was in undergrad, I was heavily involved with the University of Texas Solar Vehicles Team (a part of <a href="https://www.longhornracing.org/solar-vehicle-team" rel="external nofollow noopener" target="_blank">Longhorn Racing</a>)
+and did bioelectronics research with UT Austin’s <a href="https://sites.utexas.edu/nanshulu/" rel="external nofollow noopener" target="_blank">Lu Group</a>.</p>
 
 <p>You can see my full CV <a href="assets/pdf/Charles_Block_Resume.pdf">here</a>.</p>
 </div>
@@ -238,6 +239,16 @@ and bioelectronics with UT Austin’s <a href="https://sites.utexas.edu/nanshulu
       <table class="table table-sm table-borderless">
         
         
+        
+          <tr>
+            <th scope="row" style="width: 20%">May 07, 2025</th>
+            <td>
+              
+                Our work on developing cost models for emerging hardware using transfer learning, called <em>COGNATE</em> (led by <a href="https://chamika2.web.illinois.edu/" rel="external nofollow noopener" target="_blank">Chamika Sudusinghe</a>) has been accepted to ICML 2025!
+
+              
+            </td>
+          </tr>
         
           <tr>
             <th scope="row" style="width: 20%">Jun 28, 2024</th>
@@ -290,134 +301,6 @@ and bioelectronics with UT Austin’s <a href="https://sites.utexas.edu/nanshulu
     
 
     <!-- Selected papers -->
-    
-      <h2>
-        <a href="/publications/" style="color: inherit">selected publications</a>
-      </h2>
-      <div class="publications">
-  <ol class="bibliography"><li>
-<div class="row">
-  
-    <div class="col col-sm-2 abbr">
-          <abbr class="badge rounded w-100" style="background-color:#00aa00">
-            
-              <a href="https://www.asplos-conference.org/" rel="external nofollow noopener" target="_blank">ASPLOS</a>
-            
-          </abbr>
-        
-      
-      
-    </div>
-  
-
-  <!-- Entry bib key -->
-  <div id="block24twoface" class="col-sm-8">
-    <!-- Title -->
-    <div class="title">Two-Face: Combining Collective and One-Sided Communication for Efficient Distributed SpMM</div>
-    <!-- Author -->
-    <div class="author">
-      
-
-      
-      <em>Charles Block</em>, <a href="https://gergerog.github.io/" rel="external nofollow noopener" target="_blank">Gerasimos Gerogiannis</a>, <a href="https://charithmendis.com/" rel="external nofollow noopener" target="_blank">Charith Mendis</a>, <a href="https://scholar.google.com/citations?user=9jK5lfsAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Ariful Azad</a>, and <a href="https://iacoma.cs.uiuc.edu/josep/torrellas.html" rel="external nofollow noopener" target="_blank">Josep Torrellas</a>
-      
-    </div>
-
-    <!-- Journal/Book title and date -->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="periodical">
-      <em>In Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2</em>, La Jolla, CA, USA,  Apr 2024
-    </div>
-    <div class="periodical">
-      
-    </div>
-
-    <!-- Links/Buttons -->
-    <div class="links">
-      
-      
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      
-      
-      
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-      
-      
-      
-        
-          <a href="/assets/pdf/asplos24_3.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
-        
-      
-      
-      
-      
-      
-      
-      
-      
-    </div>
-    
-      
-      
-
-      
-      
-
-      
-      
-
-      
-      
-      
-    
-
-    
-
-    
-      <!-- Hidden abstract block -->
-      <div class="abstract hidden">
-        <p>Sparse matrix dense matrix multiplication (SpMM) is commonly used in applications ranging from scientific computing to graph neural networks. Typically, when SpMM is executed in a distributed platform, communication costs dominate. Such costs depend on how communication is scheduled. If it is scheduled in a sparsity-unaware manner, such as with collectives, execution is often inefficient due to unnecessary data transfers. On the other hand, if communication is scheduled in a fine-grained sparsity-aware manner, communicating only the necessary data, execution can also be inefficient due to high software overhead.We observe that individual sparse matrices often contain regions that are denser and regions that are sparser. Based on this observation, we develop a model that partitions communication into sparsity-unaware and sparsity-aware components. Leveraging the partition, we develop a new algorithm that performs collective communication for the denser regions, and fine-grained, one-sided communication for the sparser regions. We call the algorithm Two-Face. We show that Two-Face attains an average speedup of 2.11x over prior work when evaluated on a 4096-core supercomputer. Additionally, Two-Face scales well with the machine size.</p>
-      </div>
-    
-
-    
-      <!-- Hidden bibtex block -->
-      <div class="bibtex hidden">
-        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">block24twoface</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Block, Charles and Gerogiannis, Gerasimos and Mendis, Charith and Azad, Ariful and Torrellas, Josep}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Two-Face: Combining Collective and One-Sided Communication for Efficient Distributed SpMM}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">apr</span><span class="p">,</span>
-  <span class="na">isbn</span> <span class="p">=</span> <span class="s">{9798400703850}</span><span class="p">,</span>
-  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Association for Computing Machinery}</span><span class="p">,</span>
-  <span class="na">address</span> <span class="p">=</span> <span class="s">{New York, NY, USA}</span><span class="p">,</span>
-  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1145/3620665.3640427}</span><span class="p">,</span>
-  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1145/3620665.3640427}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1200–1217}</span><span class="p">,</span>
-  <span class="na">numpages</span> <span class="p">=</span> <span class="s">{18}</span><span class="p">,</span>
-  <span class="na">keywords</span> <span class="p">=</span> <span class="s">{high-performance computing, distributed algorithms, sparse matrices, SpMM}</span><span class="p">,</span>
-  <span class="na">location</span> <span class="p">=</span> <span class="s">{La Jolla, CA, USA}</span><span class="p">,</span>
-  <span class="na">series</span> <span class="p">=</span> <span class="s">{ASPLOS '24}</span>
-<span class="p">}</span></code></pre></figure>
-      </div>
-    
-
-    
-  </div>
-</div>
-</li></ol>
-</div>
-
     
 
     <!-- Social -->
@@ -493,7 +376,7 @@ and bioelectronics with UT Austin’s <a href="https://sites.utexas.edu/nanshulu
     
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
-      © Copyright 2024
+      © Copyright 2025
       Chase
       
       Block. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
